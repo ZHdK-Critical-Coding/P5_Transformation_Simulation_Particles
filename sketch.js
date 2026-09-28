@@ -6,8 +6,9 @@ function setup() {
 
 function update() {
   const particle = new Particle(random(.75, 2));
-  let gravity = createVector(random(-0.02, 0.02), random(-0.1, -0.15));  
-  particle.applyForce(gravity);  
+  // Start force: slightly sideways and upwards (gravity is in particle.js)
+  let startForce = createVector(random(-0.02, 0.02), random(-0.1, -0.15));  
+  particle.applyForce(startForce);  
   particles.push(particle)
 }
 

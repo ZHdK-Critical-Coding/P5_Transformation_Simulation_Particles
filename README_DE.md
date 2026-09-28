@@ -14,17 +14,19 @@ Siehe auch: [Nature of Code – Particles](https://natureofcode.com/particles/)
 
 Voraussetzungen: ein aktueller Browser.
 
+Bibliotheken (in `libraries/`): p5.js 1.10.0 (p5.sound 1.0.1 liegt im
+Ordner, wird aber nicht geladen).
+
+## Ausführen
+
 1. Den Ordner in Visual Studio Code öffnen und Live Server starten (in der
    Statusleiste auf **Go Live** klicken).
-
-Bibliotheken (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (eingebunden,
-nicht verwendet).
 
 ## Coding-Hilfe
 
 - **`sketch.js` → `update()`**: erzeugt pro Frame ein `Particle` mit
-  zufälliger Masse (0.75–2) und gibt ihm eine zufällige Startkraft (leicht
-  seitlich, nach oben). Diese Bereiche ändern, um die Fontäne zu verändern.
+  zufälliger Masse (0.75–2) und gibt ihm eine zufällige Startkraft
+  `startForce` (leicht seitlich, nach oben). Diese Bereiche ändern, um die Fontäne zu verändern.
 - **`sketch.js` → `draw()`**: ruft `update()` auf, zeichnet alle Partikel,
   entfernt die toten und zeigt die aktuelle Anzahl an.
 - **`particle.js` → `Particle`**: Der Konstruktor setzt Position

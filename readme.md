@@ -13,17 +13,19 @@ See also: [Nature of Code – Particles](https://natureofcode.com/particles/)
 
 Requirements: a current browser.
 
+Libraries (in `libraries/`): p5.js 1.10.0 (p5.sound 1.0.1 is in the
+folder but not loaded).
+
+## How to Run
+
 1. Open the folder in Visual Studio Code and start Live Server (click
    **Go Live** in the status bar).
-
-Libraries (in `libraries/`): p5.js 1.10.0, p5.sound 1.0.1 (included, not
-used).
 
 ## Coding Help
 
 - **`sketch.js` → `update()`**: creates one `Particle` per frame with a
-  random mass (0.75–2) and applies a random start force (slightly sideways,
-  upwards). Change these ranges to change the fountain.
+  random mass (0.75–2) and applies a random `startForce` (slightly
+  sideways, upwards). Change these ranges to change the fountain.
 - **`sketch.js` → `draw()`**: calls `update()`, draws all particles, removes
   the dead ones and prints the current particle count.
 - **`particle.js` → `Particle`**: the constructor sets position (bottom
